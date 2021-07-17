@@ -26,14 +26,15 @@ body {
     justify-content: center;
     align-items: center;
     /*background-color:crimson;*/
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     width: 100vw;
     height: 100vh;
+
 }
 
-.container div{
-    border: 1px solid black;  
-}
+/*.container div{
+    border: 1px solid black;
+}*/
 
 .tarea-hecha {
     text-decoration: line-through;
@@ -44,17 +45,24 @@ body {
 li {
     cursor: pointer;
     list-style: none;
+    /*background-color:cornsilk;*/
+
 }
 
 .cosas {
     width: 40em;
     text-align: center;
-    /*background-color:lightskyblue;*/
+    background: rgb(144,112,166);
+background: linear-gradient(90deg, rgba(144,112,166,1) 0%, rgba(254,149,149,1) 50%, rgba(255,218,166,1) 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .lista-de-items {
     /*text-align: left;*/
     padding: 1em 5em;
+    
 }
 
 input {
@@ -69,9 +77,59 @@ input {
 
 h1 {
     margin: 12px 0;
+    /*border: 1px solid black;*/
+
 }
 
 li:hover {
     background-color: silver;
     border: 1px solid black;  
+}
+
+.agregar-item {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+hr {
+    border-width: 0.5px;
+}
+
+.myButton {
+	background-color:#ed7827;
+	border-radius:28px;
+	border:1px solid #000301;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	/*font-size:17px;*/
+	padding:5px 15px 5px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    /*margin-bottom: 10px;*/
+    
+}
+.myButton:hover {
+	background-color:#cd3729;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.text-box {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+.text-box:focus {
+    outline:none;
 }
